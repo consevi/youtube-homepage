@@ -17,9 +17,9 @@ Projeto de recriação da interface da página inicial do YouTube, desenvolvido 
 
 
 
-## 🚀 Como executar
+## 🚀 Link do site
 
-1. Link do site:
+https://consevi.github.io/youtube-homepage/
    
 ## 📚 Objetivo
 
