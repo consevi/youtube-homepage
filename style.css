@@ -1,0 +1,678 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+html {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+body {
+    overflow: visible;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+hr {
+    height: 1px;
+    border: none;
+    background-color: #3e3e3e;
+}
+
+main {
+    flex: 1;
+    min-width: 0;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: dimgrey;
+}
+
+.conteudo {
+    display: flex;
+}
+
+.hr-1,
+.hr-2,
+.hr-3,
+.hr-4 {
+    width: 240px;
+    padding-top: 0px;
+    padding-bottom: 10px;
+}
+
+.logo {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+
+    cursor: pointer;
+
+    position: relative;
+    left: 40px;
+}
+
+.youtube-icone {
+    display: flex;
+    width: 25px;
+    height: auto;
+}
+
+
+.tracinhos-config {
+    display: flex;
+    position: relative;
+    margin-right: auto;
+    left: -125px;
+}
+
+.tracinhos {
+    width: 35px;
+    height: auto;
+}
+
+.tracinhos-button {
+    background-color: transparent;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.tracinhos-button:hover {
+    background-color: dimgrey;
+}
+
+.area-pesquisa {
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: -470px;
+}
+
+
+.lupa {
+    width: 35px;
+    height: auto;
+    cursor: pointer;
+    position: relative;
+    left: -45px;
+}
+
+.barra-pesquisa {
+    background-color: #2e2e2e;
+    border: 2px solid #3e3e3e;
+    border-radius: 25px;
+    padding: 10px;
+    width: 500px;
+    height: 35px;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+input:focus {
+    outline: 2px solid mediumblue;
+}
+
+.barra-dark {
+    position: absolute;
+    right: 35px;
+    top: 0;
+    margin-left: auto;
+    background-color: #424242;
+    width: 10%;
+    height: 100%;
+    border-radius: 0 25px 25px 0;
+}
+
+.criar-video {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+
+    position: relative;
+    left: -100px;
+    top: 5px;
+}
+
+.button-criar-video {
+    display: flex;
+    align-items: center;
+    gap: 1px;
+
+    border-radius: 25px;
+    width: 80px;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+
+
+.icon-criar-video,
+.icon-cininho {
+    width: 30px;
+    height: auto;
+}
+
+.ciniho {
+    display: inline-flex;
+}
+
+
+.button-cininho {
+    border-radius: 25px;
+    position: relative;
+    top: 5px;
+    left: -70px;
+}
+
+.perfil {
+    display: inline-flex;
+    position: relative;
+    right: 2%;
+    top: 5px;
+}
+
+.button-perfil:hover {
+    border-radius: 50%;
+}
+
+.icon-perfil {
+    width: 40px;
+    height: auto;
+    border: 50%;
+}
+
+
+.sec-1,
+.sec-2,
+.sec-3,
+.sec-4,
+.sec-5,
+.sec-6 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.button-pessoa,
+.button-historico,
+.button-inicio,
+.button-shorts-sidebar,
+.button-playlist,
+.button-assistir,
+.button-gostei,
+.button-dowloads,
+.button-mostrar,
+.button-premium,
+.button-youtube-music,
+.button-youtube-kids,
+.button-youtube-labs,
+.button-music,
+.button-filmes,
+.button-ao-vivo,
+.button-denuncias {
+    display: flex;
+    align-items: center;
+    width: 220px;
+    height: 35px;
+    border-radius: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    position: relative;
+    left: 20px;
+}
+
+.button-shorts-sidebar {
+    gap: 22px;
+}
+
+
+.icon-casinha,
+.icon-shorts,
+.icon-v {
+    width: 30px;
+    height: auto;
+
+    position: relative;
+    left: 5px;
+}
+
+.button-shorts,
+.button-inicio {
+    gap: 23px;
+}
+
+
+.voce {
+    display: inline-flex;
+    align-items: center;
+}
+
+.icon-v {
+    position: relative;
+    top: -2px;
+    transform: rotate(270deg);
+}
+
+.texto-voce {
+    position: relative;
+    margin-left: 6px;
+    font-size: 18px;
+    margin-top: 8px;
+}
+
+.button-voce {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 15px;
+    width: 220px;
+    height: 40px;
+    gap: 20px;
+
+    position: relative;
+    left: 20px;
+}
+
+.inicio,
+.shorts-sidebar,
+.seu-canal,
+.assistir-tarde,
+.playlis,
+.historico,
+.gostei,
+.dowloads,
+.mostrar-mais,
+.premium,
+.youtube-music,
+.youtube-kids,
+.youtube-labs,
+.music,
+.filmes,
+.ao-vivo {
+    display: inline-flex;
+    align-items: center;
+}
+
+.icon-denuncias,
+.icon-premium,
+.icon-youtube-kids {
+    width: 35px;
+    height: auto;
+    position: relative;
+}
+
+.icon-youtube-music,
+.icon-youtube-labs,
+.icon-assistir,
+.icon-mostrar,
+.icon-dowloads,
+.icon-gostei,
+.icon-playlist,
+.icon-music,
+.icon-filmes,
+.icon-ao-vivo {
+    width: 30px;
+    height: auto;
+    position: relative;
+}
+
+.icon-pessoa {
+    width: 50px;
+    height: auto;
+    position: relative;
+    left: -6px;
+}
+
+.icon-historico {
+    width: 45px;
+    height: auto;
+    position: relative;
+    left: -3px;
+}
+
+.button-denuncias,
+.button-youtube-music,
+.button-youtube-labs,
+.button-mostrar,
+.button-dowloads,
+.button-gostei,
+.button-historico,
+.button-playlist {
+    gap: 18px;
+}
+
+.button-premium,
+.button-youtube-kids {
+    gap: 12px;
+}
+
+.button-assistir {
+    gap: 20px;
+}
+
+.button-historico {
+    gap: 4px;
+}
+
+.mais-youtube {
+    display: inline-flex;
+}
+
+.texto-final {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #aaaaaa;
+    margin-left: 20px;
+    line-height: 20px;
+}
+
+.texto-final p {
+    margin-bottom: 16px;
+}
+
+.copyright {
+    font-size: 12px;
+    color: #717171;
+}
+
+.topicos {
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    top: 20px;
+    left: 10px;
+}
+
+
+.button-topicos-grande {
+    width: 120px;
+    height: 30px;
+    border-radius: 15px;
+    font-size: 15px;
+    padding: 5px 5px;
+
+    background-color: #2e2e2e;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.button-topicos-medio {
+    width: 80px;
+    height: 30px;
+    border-radius: 15px;
+    font-size: 15px;
+    padding: 5px 5px;
+
+    background-color: #2e2e2e;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.button-topicos:hover {
+    background-color: #2e2e2e;
+}
+
+.button-topicos-medio:hover {
+    background-color: #2e2e2e;
+}
+
+.button-topicos-grande:hover {
+    background-color: #2e2e2e;
+}
+
+.button-topicos,
+.button-topicos-medio,
+.button-topicos-grande {
+    white-space: nowrap;
+}
+
+.button-seta {
+    align-items: center;
+    width: 60px;
+    height: 30px;
+    border-radius: 15px;
+    position: relative;
+}
+
+.icon-seta {
+    width: 40px;
+    height: auto;
+    transform: rotate(270deg);
+
+    position: relative;
+    top: -3px;
+}
+
+.videos {
+    display: grid;
+    grid-template-columns: repeat(3, 450px);
+    align-items: start;
+    column-gap: 5px;
+    row-gap: 10px;
+
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.video {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 10px;
+    align-items: center;
+
+
+
+    max-width: 450px;
+    height: auto;
+    border-radius: 25px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.video {
+    transition: background-color 0.2s ease;
+}
+
+.video:hover {
+    background-color: #424242;
+}
+
+.thumbnail {
+    position: relative;
+    max-width: 420px;
+}
+
+.img-video {
+    border-radius: 10px;
+    max-width: 420px;
+    height: auto;
+}
+
+.texto-video {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    max-width: 85%;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.duracao {
+    position: absolute;
+    bottom: 10px;
+    right: 8px;
+    background-color: #2e2e2e;
+    width: 32px;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-video {
+    width: 100%;
+    text-align: left;
+}
+
+.info-canal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #aaaaaa;
+}
+
+.pontinhos {
+    margin-left: auto;
+}
+
+
+.icon-pontinhos {
+    width: 20px;
+    height: auto;
+}
+
+.button-pontinhos {
+    align-items: center;
+    border-radius: 35px;
+    width: 30px;
+    height: auto;
+}
+
+.shorts-main {
+    display: flex;
+    margin-left: -50px;
+    align-items: start;
+
+    justify-content: center;
+}
+
+.icon-shorts-main {
+    width: 40px;
+    height: auto;
+}
+
+.shorts {
+    display: grid;
+    grid-template-columns: repeat(5, 280px);
+    align-items: start;
+}
+
+.short {
+    position: relative;
+
+
+    padding: 10px;
+    border-radius: 25px;
+    align-items: center;
+
+    margin: 0;
+    width: 260px;
+    height: 500px;
+
+    background-color: transparent;
+    transition: background-color 0.2s ease;
+}
+
+.short:hover {
+    background-color: #424242;
+    cursor: pointer;
+}
+
+.thumbnail-shorts {
+    position: relative;
+    width: 100%;
+}
+
+.img-shorts {
+    display: block;
+    width: 240px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 15px;
+
+    padding: 5px 0px;
+}
+
+
+.info-shorts {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+
+    max-width: 70%;
+}
+
+.span {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #aaaaaa;
+}
+
+.texto-shorts {
+    display: block;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.pontinhos-shorts {
+    position: absolute;
+    right: 5%;
+    top: 90%;
+    margin: 0;
+}
